@@ -2,15 +2,28 @@ import java.util.ArrayList;
 
 public class Die {
 
-	ArrayList<Integer> die = new ArrayList<>();
+	int sides = 2;
+	int value = 1;
 
 	public Die() {
-		for(int i = 1; i <= 6; i++)
-			die.add(i);
+		sides = 6;
+		value = (int)(Math.random() * sides) + 1;
 	}
 
 	public Die(int sides) {
-		for(int i = 1; i <= sides; i++)
-			die.add(i);
+		this.sides = sides;
+		value = (int)(Math.random() * sides) + 1;
+	}
+
+	public int getSides() {
+		return sides;
+	}
+
+	public int getValue() {
+		return value;
+	}
+
+	public String toString() {
+		return "Number of sides: " + die.size() + ", Value: " + value;
 	}
 }
