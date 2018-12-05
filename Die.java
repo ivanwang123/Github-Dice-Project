@@ -15,6 +15,10 @@ public class Die {
 		value = (int)(Math.random() * sides) + 1;
 	}
 
+	public void roll() {
+		value = (int)(Math.random() * sides) + 1;
+	}
+
 	public int getSides() {
 		return sides;
 	}
