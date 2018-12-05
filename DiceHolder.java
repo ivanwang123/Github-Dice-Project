@@ -15,10 +15,14 @@ public class DiceHolder{
 	}
 	return Die;
 	}
-	//public void shake(){
-	//}
-	//public String toString(){
-	//}
+	public void shake(){
+		for(int i = 0; i<diceholder.size(); i++){
+			diceholder.get((Die),roll());
+
+		}
+	}
+	public String toString(){
+	}
 
 
 
