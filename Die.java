@@ -2,11 +2,10 @@ import java.util.ArrayList;
 
 public class Die {
 
-	int sides = 2;
+	int sides = 6;
 	int value = 1;
 
 	public Die() {
-		sides = 6;
 		value = (int)(Math.random() * sides) + 1;
 	}
 
