@@ -7,9 +7,9 @@ public class DiceHolder{
 	public DiceHolder(){
 	}
 	public int addDie(Die die){
-		if(diceholder.size()==6)
+		if(diceholder.size()>=6)
 			return -1;
-		if(diceholder.size()!=6)
+		if(diceholder.size()<6)
 			diceholder.add(die);
 		return 1;
 	}
@@ -23,7 +23,7 @@ public class DiceHolder{
 		for(int i = 0; i<diceholder.size(); i++)
 			a+= diceholder.get(i)+"\n";
 
-		return "Die: "+ a;
+		return a;
 	}
 
 
