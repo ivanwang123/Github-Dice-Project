@@ -1,28 +1,28 @@
 import java.util.ArrayList;
 public class DiceHolder{
 
-	ArrayList <Integer> diceholder = new ArrayList<>();
+	ArrayList <Die> diceholder = new ArrayList<>();
 	int Die;
 
 	public DiceHolder(){
 	}
-	public int addDie(){
+	public int addDie(Die die){
 		if(diceholder.size()==6)
 			return -1;
 		if(diceholder.size()!=6){
-			diceholder.add(Die);
+			diceholder.add(die);
 		return 1;
 	}
 	return Die;
 	}
 	public void shake(){
 		for(int i = 0; i<diceholder.size(); i++){
-			diceholder.get((Die),roll());
-
+			diceholder.get(i).roll();
 		}
 	}
-	public String toString(){
-	}
+	//public String toString(){
+		//return
+	//}
 
 
 
